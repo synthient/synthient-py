@@ -129,7 +129,6 @@ class LookupResponse(BaseModel):
     is_incognito (bool): If the visitor is in incognito mode.
     is_bot (bool): If the visitor is a bot.
     is_vm (bool): If the visitor is using a VM.
-    is_farm (bool): If the visitor is using a device farm.
     solved (Optional[bool]): If the visitor has solved the captcha. (if applicable, GetMetricsToken will be null)
     consumed (bool): If the token has been consumed. AKA you used it before. Prevents abuse.
     """
@@ -146,7 +145,6 @@ class LookupResponse(BaseModel):
     risk_score: int
     is_incognito: bool
     is_bot: bool
-    is_farm: bool
     is_vm: bool
     solved: Optional[bool] = None
     consumed: Optional[bool] = None
