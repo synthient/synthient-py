@@ -58,7 +58,7 @@ class Device(BaseModel):
     """
 
     model: Optional[str] = None
-    brand: str
+    brand: Optional[str] = None
     os: str
     version: str
 
